@@ -1,0 +1,31 @@
+{
+  "observations": 731,
+  "date_start": "2011-01-01",
+  "date_end": "2012-12-31",
+  "selected_model": "autoregression",
+  "cv_metrics": {
+    "mae": 812.71,
+    "rmse": 1050.34,
+    "wape_pct": 15.92,
+    "bias": -46.48
+  },
+  "holdout_metrics": {
+    "mae": 1383.53,
+    "rmse": 1950.36,
+    "wape_pct": 26.85,
+    "bias": 869.78,
+    "interval_coverage_pct": 65.56
+  },
+  "holdout_mae_improvement_vs_seasonal_naive_pct": 38.66,
+  "scenario_cost_reduction_vs_seasonal_naive_pct": 23.88,
+  "future_30_day_total": 111824,
+  "future_daily_average": 3727.5,
+  "future_peak_forecast": 4165,
+  "future_peak_protected_shifts": 5,
+  "assumptions": {
+    "underforecast_unit_cost": 3.5,
+    "overforecast_unit_cost": 1.0,
+    "rides_per_operations_shift": 1200,
+    "prediction_interval": "Empirical 80% interval from historical out-of-sample residuals"
+  }
+}

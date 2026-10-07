@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "demand-forecasting-time-series"
+version = "1.0.0"
+description = "Reproducible demand forecasting with model comparison and business decision scenarios"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Sagar Mandavkar"}]
+dependencies = [
+  "certifi>=2024.2",
+  "matplotlib>=3.8",
+  "numpy>=1.26",
+  "pandas>=2.1",
+  "scikit-learn>=1.4",
+  "seaborn>=0.13",
+  "statsmodels>=0.14",
+]
+
+[project.optional-dependencies]
+dev = ["ipykernel>=6.29", "nbclient>=0.10", "nbconvert>=7.16", "nbformat>=5.10", "pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"
