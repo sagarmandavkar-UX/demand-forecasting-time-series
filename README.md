@@ -50,6 +50,10 @@ The project translates the final 30-day point forecast and empirical 80% interva
 
 The assumptions are editable in `src/demand_forecasting/business.py`; they are illustrative and should be replaced with real unit economics before deployment.
 
+## Tech stack
+
+Python, pandas, NumPy, scikit-learn (Ridge autoregression), statsmodels (Holt-Winters), Matplotlib and seaborn, with pytest and GitHub Actions.
+
 ## Repository structure
 
 ```text
@@ -79,6 +83,10 @@ Open `notebooks/demand_forecasting.ipynb` for the complete narrative analysis.
 
 This project uses the daily Capital Bikeshare counts from the [UCI Bike Sharing dataset](https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset), donated by Hadi Fanaee-T. The dataset covers 2011–2012, is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), and has DOI [10.24432/C5W894](https://doi.org/10.24432/C5W894).
 
+## Related project
+
+[daily-bike-demand-forecasting](https://github.com/sagarmandavkar-UX/daily-bike-demand-forecasting) analyzes the same daily Bike Sharing data with a different design: a 30-day final holdout and a go/no-go deployment decision. The two projects choose different models and report different forecast levels because their validation windows and feature sets differ, so compare them as two methodology studies, not as competing estimates.
+
 ## Limitations
 
 - The source data spans two years and one metropolitan bike-sharing system.
@@ -89,4 +97,4 @@ This project uses the daily Capital Bikeshare counts from the [UCI Bike Sharing 
 
 ## License
 
-Project code is released under the MIT License. The source dataset remains under CC BY 4.0 and is attributed above.
+Project code is released under the [MIT License](LICENSE). The source dataset remains under CC BY 4.0 and is attributed above.
